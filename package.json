@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "demo:jsonfile":"cd jsonfile && node index.js",
+    "demo:jsonfile": "cd jsonfile && node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +20,15 @@
   "dependencies": {
     "jsonfile": "^5.0.0",
     "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "husky": "^2.5.0",
+    "lint-staged": "^8.2.1",
+    "prettier": "^1.18.2"
+  },
+  "husky":{
+    "hooks":{
+      "pre-commit":"npm test"
+    }
   }
 }
