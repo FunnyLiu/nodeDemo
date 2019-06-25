@@ -20,15 +20,15 @@
   "dependencies": {
     "jsonfile": "^5.0.0",
     "lodash": "^4.17.11"
-  }, 
+  },
   "devDependencies": {
-    "husky": "^2.5.0",
+    "husky": "^2.4.0",
     "lint-staged": "^8.2.1",
     "prettier": "^1.18.2"
   },
-  "husky":{
-    "hooks":{ 
-      "pre-commit":"npm test"
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test"
     }
   }
 }
