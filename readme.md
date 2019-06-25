@@ -1,9 +1,9 @@
 Some pure Node demo
 
 
-# husky
+# prettier
 
-
+use yorkie/husky + lint-staged + prettier to format code after commit automatic
 
 # jsonfile
 
