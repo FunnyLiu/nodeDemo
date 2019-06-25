@@ -22,13 +22,18 @@
     "lodash": "^4.17.11"
   },
   "devDependencies": {
-    "husky": "^2.4.0",
+    "husky": "^2.5.0",
     "lint-staged": "^8.2.1",
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "yorkie": "^2.0.0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm test"
-    }
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged":{
+    "prettier/*.js":[
+      "prettier --write",
+      "git add"
+    ]
   }
 }
