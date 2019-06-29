@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "demo:fork_orphan": "cd fork_orphan && node main.js",
     "demo:jsonfile": "cd jsonfile && node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

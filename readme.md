@@ -1,5 +1,11 @@
 Some pure Node demo
+# fork_orphan 
 
+orphan process
+
+``` bash
+$ worker process created, pid: 77815 ppid: 77814
+```
 
 # prettier
 
