@@ -9,6 +9,16 @@ A simple daemon process
 3. Change the subprocess working directory (eg: "/" or "/usr/, etc.)
 4. Parent process termination
 
+Using spawn to create a child process completes the first step above. 
+
+Setting options.detached to true causes the child process to continue running after the parent process exits, which is the second step. 
+
+Options.cwd specifies the current child process working directory. 
+
+If you do not set the default to inherit the current working directory, this is the third step.
+
+ Run daemon.unref() to exit the parent process, refer to options.stdio, which is the fourth step.
+
 ``` bash
 $ npm run demo:daemon
 ```
