@@ -1,5 +1,20 @@
 Some pure Node demo
 
+# daemon
+
+A simple daemon process
+
+1. Create a child process
+2. Create a new session in the child process (call system function setsid)
+3. Change the subprocess working directory (eg: "/" or "/usr/, etc.)
+4. Parent process termination
+
+``` bash
+$ npm run demo:daemon
+```
+
+log will be write into ./daemon/stdout.log
+
 # fork_multiProcess_samePort
 
 Start multiple processes on the same port
