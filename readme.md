@@ -32,6 +32,22 @@ it's fathers ppid is 1:
 
 <img src="https://raw.githubusercontent.com/brizer/graph-bed/master/img/20190629153028.png"/>
 
+
+# ipc_pipe
+
+communication bewteen two process with pipe
+
+``` bash
+$ npm run demo:ipc_pipe 
+```
+
+```
+81160 81161
+I am worker, PID:  81161
+```
+
+
+
 # prettier
 
 use yorkie/husky + lint-staged + prettier to format code after commit automatic
