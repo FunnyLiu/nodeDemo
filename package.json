@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "demo:crawler": "cd crawler && node index.js",
     "demo:daemon": "cd daemon && node main.js",
     "demo:fork_multiProcess_samePort": "cd fork_multiProcess_samePort && node main.js",
     "demo:fork_multiProcess_samePort:true": "cd fork_multiProcess_samePort && node main_true.js",
     "demo:fork_orphan": "cd fork_orphan && node main.js",
-    "demo:ipc_pipe":"cd ipc_pipe && node main.js",
+    "demo:ipc_pipe": "cd ipc_pipe && node main.js",
     "demo:jsonfile": "cd jsonfile && node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,6 +24,7 @@
   },
   "homepage": "https://github.com/FunnyLiu/nodeDemo#readme",
   "dependencies": {
+    "crawler": "^1.2.1",
     "jsonfile": "^5.0.0",
     "lodash": "^4.17.11"
   },
@@ -35,8 +37,8 @@
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
-  "lint-staged":{
-    "prettier/*.js":[
+  "lint-staged": {
+    "prettier/*.js": [
       "prettier --write",
       "git add"
     ]
