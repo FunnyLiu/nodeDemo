@@ -11,7 +11,7 @@
     "demo:fork_orphan": "cd fork_orphan && node main.js",
     "demo:ipc_pipe": "cd ipc_pipe && node main.js",
     "demo:jsonfile": "cd jsonfile && node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:promise": "promises-aplus-tests myPromise/adapter"
   },
   "repository": {
     "type": "git",
@@ -32,6 +32,7 @@
     "husky": "^2.5.0",
     "lint-staged": "^8.2.1",
     "prettier": "^1.18.2",
+    "promises-aplus-tests": "^2.1.2",
     "yorkie": "^2.0.0"
   },
   "gitHooks": {
