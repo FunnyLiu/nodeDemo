@@ -92,3 +92,8 @@ Promise achieve based on promise/A+
 # single
 
 single design pattern in node, by cache of module.
+
+
+# vm
+
+usage of vm2
