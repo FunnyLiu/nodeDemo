@@ -1,5 +1,9 @@
 Some pure Node demo
 
+# autocomplete
+
+use `inquirer-search-list` and `inquirer` to archive auto complete in cli.
+
 # crawler
 
 Use crawler to get network content.
