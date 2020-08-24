@@ -66,6 +66,10 @@ it's fathers ppid is 1:
 <img src="https://raw.githubusercontent.com/brizer/graph-bed/master/img/20190629153028.png"/>
 
 
+# graphviz
+
+use of node-graphviz
+
 # ipc_pipe
 
 communication bewteen two process with pipe

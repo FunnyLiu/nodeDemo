@@ -1,0 +1,17 @@
+{
+  "name": "graphvizdemo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-graphviz": "^0.1.0",
+    "viz.js": "^2.1.2"
+  }
+}
