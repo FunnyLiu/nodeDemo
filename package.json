@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/FunnyLiu/nodeDemo#readme",
   "dependencies": {
+    "@tomato-js/env": "0.0.22",
     "crawler": "^1.2.1",
     "gitlab": "file:gitlab",
     "jsonfile": "^5.0.0",
