@@ -180,6 +180,21 @@ class Promise {
       }
     });
   }
+  static race(arr){
+    let hasValue = false
+    let hasError = false
+    return new Promise((resolve, reject) => {
+      for(let i = 0; i < arr.length; i++) {
+        arr[i].then(data => {
+          !hasValue && !hasError && resolve(data) 
+          hasValue = true
+        }, error => {
+          !hasValue && !hasError &&reject(error)
+          hasError = true
+        })
+      }
+    })
+  }
   // 两个参数
   then(onFulfilled, onRejected) {
     const promise1 = this;
@@ -255,6 +270,7 @@ class Promise {
   catch(callback) {
     return this.then(null, callback);
   }
+  // finally本质也是then的语法糖
   finally(callback) {
     return this.then(
       data => {

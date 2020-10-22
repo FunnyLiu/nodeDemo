@@ -41,3 +41,29 @@ var p3 = new Promise((resolve, reject) => {
 Promise.all([p1, p2, p3]).then(values => {
   console.log(values); // [3, 1337, "foo"]
 });
+
+
+const pr1 = new Promise((resolve,reject)=>{
+  setTimeout(()=>{
+    console.log('pr1')
+    resolve('pr1')
+  },3000)
+})
+const pr2 = new Promise((resolve,reject)=>{
+  setTimeout(()=>{
+    console.log('pr2')
+    resolve('pr2')
+  },2000)
+})
+const pr3 = new Promise((resolve,reject)=>{
+  setTimeout(()=>{
+    console.log('pr3')
+    resolve('pr3')
+  },1000)
+})
+
+Promise.race([pr1,pr2,pr3]).then(console.log)
+//pr3
+//pr3
+//pr2
+//pr1
