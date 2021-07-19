@@ -4,9 +4,20 @@
     // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-
-    
-
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "demo:debug",
+            "program": "${workspaceFolder}/debug/app.js"
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "demo:debug:remote",
+            "port": 5858,
+            "address": "localhost",
+            "localRoot": "${workspaceFolder}"
+        },
         {
             "type": "node",
             "request": "launch",
