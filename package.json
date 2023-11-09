@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "husky": "^2.5.0",
-    "lint-staged": "^8.2.1",
+    "lint-staged": "^13.1.0",
     "prettier": "^1.18.2",
     "promises-aplus-tests": "^2.1.2",
     "yorkie": "^2.0.0"
